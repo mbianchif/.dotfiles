@@ -41,9 +41,6 @@ return {
                     },
                 },
             })
-            lspconfig.sqls.setup({
-                capabilities = capabilities,
-            })
             lspconfig.basedpyright.setup({
                 capabilities = capabilities,
                 settings = {
