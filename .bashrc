@@ -118,3 +118,6 @@ fi
 
 # Starship
 eval "$(starship init bash)"
+
+# Rust
+export PATH="$PATH:$HOME/.cargo/bin"
