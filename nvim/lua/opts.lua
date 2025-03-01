@@ -8,6 +8,7 @@ vim.cmd("set title")
 vim.cmd("set termguicolors")
 vim.cmd("set undolevels=200")
 vim.cmd("set cmdheight=0")
+vim.cmd("set conceallevel=3")
 
 vim.g.mapleader = " "
 vim.g.have_nerd_font = true
