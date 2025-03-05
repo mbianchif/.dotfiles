@@ -15,7 +15,6 @@ return {
                 nls.builtins.formatting.clang_format,
 
                 -- Go
-                nls.builtins.diagnostics.revive,
                 nls.builtins.formatting.goimports,
             },
         })
