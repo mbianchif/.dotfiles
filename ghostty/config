@@ -1,10 +1,16 @@
 # font
 font-family = "Monaspace Neon"
+font-feature = -liga
 font-style = medium
-font-size = 16
+font-size = 14
 
 # theme
 theme = Twilight
 
-# extra
-working-directory = "~/Documents"
+# window
+window-width = 128
+window-height = 32
+
+# cursor
+cursor-style = block
+mouse-hide-while-typing = true
