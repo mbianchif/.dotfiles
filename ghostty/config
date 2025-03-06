@@ -14,3 +14,5 @@ window-height = 32
 # cursor
 cursor-style = block
 mouse-hide-while-typing = true
+
+command = tmux
