@@ -117,6 +117,9 @@ if ! shopt -oq posix; then
   fi
 fi
 
+alias ..='cd ..'
+alias ...='cd ../..'
+
 export EDITOR='nvim'
 
 # Starship
