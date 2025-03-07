@@ -1,3 +1,5 @@
+#!/bin/bash
+
 DOTFILES = ~/.dotfiles
 
 ln -sf $DOTFILES/nvim    ~/.config/nvim
