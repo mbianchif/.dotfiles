@@ -23,5 +23,10 @@ vim.keymap.set("n", "<leader>h", ":nohlsearch<CR>")
 vim.wo.number = true
 
 vim.diagnostic.config({
-	virtual_lines = true,
+    update_in_insert = true,
+    virtual_text = false,
+    virtual_lines = {
+        only_current_line = true,
+        highlight_whole_line = false,
+    },
 })
