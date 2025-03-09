@@ -7,9 +7,8 @@ return {
             },
 			plugins = {
 				telescope = true,
-				treesitter = true,
                 nvimtree = true,
-                lsp = true,
+                gitsigns = true,
 			},
 		})
 		vim.g.tundra_biome = "jungle"
