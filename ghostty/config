@@ -8,8 +8,7 @@ font-size = 14
 theme = Twilight
 
 # window
-window-width = 128
-window-height = 32
+maximize = true
 
 # cursor
 cursor-style = block
