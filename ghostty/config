@@ -1,6 +1,6 @@
 # font
 font-family = "Monaspace Neon"
-font-feature = -liga
+font-feature = -liga -calt -dlig
 font-style = medium
 font-size = 14
 
