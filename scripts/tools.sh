@@ -26,7 +26,7 @@ sudo snap install helix --classic
 echo "🧠 Installing language servers..."
 sudo apt install -y clangd
 rustup component add rust-analyzer
-sudo snap install ruff
+sudo snap install pylsp
 sudo snap install gopls --classic
 sudo snap install typescript-language-server
 sudo snap install marksman
