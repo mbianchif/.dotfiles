@@ -5,11 +5,11 @@ CONFIG="$HOME/.config"
 
 mkdir -p "$CONFIG"
 
-ln -sf "$DOTFILES/nvim"          "$CONFIG/nvim"
-ln -sf "$DOTFILES/ghostty"       "$CONFIG/ghostty"
-ln -sf "$DOTFILES/starship.toml" "$CONFIG/starship.toml"
-ln -sf "$DOTFILES/helix"         "$CONFIG/helix"
+ln -sf "$DOTFILES/ghostty"       "$CONFIG"
+ln -sf "$DOTFILES/helix"         "$CONFIG"
+ln -sf "$DOTFILES/nvim"          "$CONFIG"
+ln -sf "$DOTFILES/starship.toml" "$CONFIG"
 
-ln -sf "$DOTFILES/.gitconfig" "$HOME/.gitconfig"
-ln -sf "$DOTFILES/.tmux.conf" "$HOME/.tmux.conf"
-ln -sf "$DOTFILES/.bashrc"    "$HOME/.bashrc"
+ln -sf "$DOTFILES/.gitconfig" "$HOME"
+ln -sf "$DOTFILES/.tmux.conf" "$HOME"
+ln -sf "$DOTFILES/.bashrc"    "$HOME"
