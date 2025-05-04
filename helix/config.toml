@@ -1,17 +1,32 @@
-theme = "gruvbox_dark_hard"
+theme = "custom"
 
 [editor]
-line-number = "relative"
-mouse = false
-cursorline = true
-completion-timeout = 5
-true-color = true
+auto-save = true
+auto-format = true
 color-modes = true
+completion-timeout = 5
+cursorline = true
 end-of-line-diagnostics = "hint"
+line-number = "relative"
+text-width = 120
+true-color = true
+
+[editor.auto-pairs]
+'<' = '>'
+'[' = ']'
+'(' = ')'
+'{' = '}'
+'"' = '"'
+'`' = '`'
+"'" = "'"
+
+[editor.soft-wrap]
+enable = true
 
 [editor.statusline]
-center = ["version-control"]
-right = ["diagnostics", "selections", "register", "file-type", "position", "file-encoding"]
+left = ["mode", "spinner", "spacer", "version-control", "spacer", "diagnostics"]
+center = ["file-name"]
+right = ["selections", "position", "file-type", "file-encoding"]
 
 [editor.file-picker]
 hidden = false
@@ -22,3 +37,8 @@ min-width = 0
 [editor.inline-diagnostics]
 cursor-line = "warning"
 other-lines = "error"
+
+[editor.lsp]
+display-messages = true
+auto-signature-help = true
+display-signature-help-docs = true
