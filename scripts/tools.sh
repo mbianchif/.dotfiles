@@ -1,42 +1,39 @@
 #!/bin/bash
 
+set -e
+set -o pipefail
+
+echo "🔄 Updating system packages..."
 sudo apt update
 sudo apt upgrade -y
 
-# essentials
-if ! apt list --installed | grep -q build-essential; then
-    sudo apt install build-essential
-fi
+echo "🧰 Installing development tools..."
+sudo apt install -y build-essential curl ripgrep zip unzip btop git bat
+sudo snap install tmux --classic
 
-# curl
-if ! apt list --installed | grep -q curl; then
-    sudo apt install curl
-fi
+echo "🦀 Installing Rust..."
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+export PATH="$HOME/.cargo/bin:$PATH"
+source "$HOME/.cargo/env"
 
-# Rust
-if ! which rustc &> /dev/null; then
-    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-fi
+echo "🐹 Installing Go..."
+sudo snap install go --classic
 
-# ripgrep
-if ! apt list --installed | grep -q ripgrep; then
-    sudo apt install ripgrep
-fi
+echo "📝 Installing editors..."
+sudo snap install nvim --classic
+sudo snap install helix --classic
 
-# Go
-if ! which go &> /dev/null; then
-    sudo snap install go --classic
-fi
+echo "🧠 Installing language servers..."
+sudo apt install -y clangd
+rustup component add rust-analyzer
+sudo snap install ruff
+sudo snap install gopls --classic
+sudo snap install typescript-language-server
+sudo snap install marksman
+sudo snap install bash-language-server --classic
+sudo snap install yaml-language-server
 
-# Starship
-curl -sS https://starship.rs/install.sh | sh
+echo "🌟 Installing Starship prompt..."
+curl -sS https://starship.rs/install.sh | sh -s -- -y
 
-# nvim
-if ! which nvim &> /dev/null; then
-    sudo snap install nvim --classic
-fi
-
-# tmux
-if ! which tmux &> /dev/null; then
-    sudo snap install tmux --classic
-fi
+echo "✅ All tools installed successfully!"

@@ -1,11 +1,14 @@
 #!/bin/bash
 
 DOTFILES="$HOME/.dotfiles"
+CONFIG="$HOME/.config"
 
-ln -sf "$DOTFILES/nvim"          "$HOME/.config/nvim"
-ln -sf "$DOTFILES/ghostty"       "$HOME/.config/ghostty"
-ln -sf "$DOTFILES/starship.toml" "$HOME/.config/starship.toml"
-ln -sf "$DOTFILES/helix"         "$HOME/.config/helix"
+mkdir -p "$CONFIG"
+
+ln -sf "$DOTFILES/nvim"          "$CONFIG/nvim"
+ln -sf "$DOTFILES/ghostty"       "$CONFIG/ghostty"
+ln -sf "$DOTFILES/starship.toml" "$CONFIG/starship.toml"
+ln -sf "$DOTFILES/helix"         "$CONFIG/helix"
 
 ln -sf "$DOTFILES/.gitconfig" "$HOME/.gitconfig"
 ln -sf "$DOTFILES/.tmux.conf" "$HOME/.tmux.conf"
