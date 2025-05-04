@@ -7,6 +7,7 @@ cursorline = true
 completion-timeout = 5
 true-color = true
 color-modes = true
+end-of-line-diagnostics = "hint"
 
 [editor.statusline]
 center = ["version-control"]
@@ -17,3 +18,7 @@ hidden = false
 
 [editor.gutters.line-numbers]
 min-width = 0
+
+[editor.inline-diagnostics]
+cursor-line = "warning"
+other-lines = "error"
