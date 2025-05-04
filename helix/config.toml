@@ -1,0 +1,19 @@
+theme = "gruvbox_dark_hard"
+
+[editor]
+line-number = "relative"
+mouse = false
+cursorline = true
+completion-timeout = 5
+true-color = true
+color-modes = true
+
+[editor.statusline]
+center = ["version-control"]
+right = ["diagnostics", "selections", "register", "file-type", "position", "file-encoding"]
+
+[editor.file-picker]
+hidden = false
+
+[editor.gutters.line-numbers]
+min-width = 0
