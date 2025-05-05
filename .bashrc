@@ -142,10 +142,6 @@ export NVM_DIR="$HOME/.nvm"
 # Android
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$ANDROID_HOME/platform-tools:$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/emulator:$PATH
-<<<<<<< Updated upstream
-=======
 
-
-# Created by `pipx` on 2025-05-05 22:19:41
-export PATH="$PATH:/home/vinki/.local/bin"
->>>>>>> Stashed changes
+# pipx
+export PATH="$PATH:$HOME/.local/bin"
