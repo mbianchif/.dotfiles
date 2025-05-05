@@ -120,7 +120,7 @@ fi
 alias ..='cd ..'
 alias ...='cd ../..'
 
-export EDITOR='nvim'
+export EDITOR='hx'
 
 # Starship
 eval "$(starship init bash)"
@@ -128,6 +128,11 @@ eval "$(starship init bash)"
 # Rust
 export PATH="$PATH:$HOME/.cargo/bin"
 export PATH="$PATH:$HOME/.cargo/env"
+
+# Go
+export PATH="$PATH:/usr/local/go/bin"
+export GOPATH="$HOME/.go"
+export PATH="$PATH:$GOPATH/bin"
 
 # Node
 export NVM_DIR="$HOME/.nvm"
@@ -137,4 +142,3 @@ export NVM_DIR="$HOME/.nvm"
 # Android
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$ANDROID_HOME/platform-tools:$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/emulator:$PATH
-
