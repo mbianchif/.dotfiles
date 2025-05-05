@@ -7,6 +7,7 @@ color-modes = true
 completion-timeout = 5
 cursorline = true
 end-of-line-diagnostics = "hint"
+gutters = ["diff", "diagnostics", "line-numbers", "spacer"]
 line-number = "relative"
 text-width = 120
 true-color = true
@@ -30,9 +31,6 @@ right = ["selections", "position", "file-type", "file-encoding"]
 
 [editor.file-picker]
 hidden = false
-
-[editor.gutters.line-numbers]
-min-width = 0
 
 [editor.inline-diagnostics]
 cursor-line = "warning"
