@@ -142,3 +142,6 @@ export NVM_DIR="$HOME/.nvm"
 # Android
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$ANDROID_HOME/platform-tools:$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/emulator:$PATH
+
+# pipx
+export PATH="$PATH:$HOME/.local/bin"
