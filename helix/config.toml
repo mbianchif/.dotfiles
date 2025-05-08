@@ -11,17 +11,6 @@ text-width = 120
 mouse = false
 popup-border = "all"
 true-color = true
-rulers = [120]
-
-
-[editor.auto-pairs]
-'<' = '>'
-'[' = ']'
-'(' = ')'
-'{' = '}'
-'"' = '"'
-'`' = '`'
-"'" = "'"
 
 
 [editor.auto-save]
