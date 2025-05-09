@@ -8,7 +8,6 @@ end-of-line-diagnostics = "hint"
 gutters = ["diff", "diagnostics", "line-numbers", "spacer"]
 line-number = "relative"
 text-width = 120
-mouse = false
 popup-border = "all"
 true-color = true
 
