@@ -145,3 +145,6 @@ export PATH=$ANDROID_HOME/platform-tools:$ANDROID_HOME/cmdline-tools/latest/bin:
 
 # pipx
 export PATH="$PATH:$HOME/.local/bin"
+
+# HomeBrew
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"

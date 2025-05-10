@@ -7,7 +7,6 @@ mkdir -p "$CONFIG"
 
 ln -sf "$DOTFILES/ghostty"       "$CONFIG"
 ln -sf "$DOTFILES/helix"         "$CONFIG"
-ln -sf "$DOTFILES/nvim"          "$CONFIG"
 ln -sf "$DOTFILES/starship.toml" "$CONFIG"
 
 ln -sf "$DOTFILES/.gitconfig" "$HOME"
