@@ -10,10 +10,7 @@ line-number = "relative"
 text-width = 120
 popup-border = "all"
 true-color = true
-
-
-[editor.auto-save]
-focus-lost = true
+bufferline = "always"
 
 
 [editor.cursor-shape]
@@ -37,5 +34,5 @@ enable = true
 
 [editor.statusline]
 left = ["mode", "spinner", "spacer", "version-control", "spacer", "diagnostics"]
-center = ["file-name", "file-modification-indicator"]
-right = ["selections", "position", "file-type", "file-encoding"]
+center = ["file-name"]
+right = ["file-type", "file-encoding"]
