@@ -26,8 +26,8 @@ keybinds clear-defaults=true {
     }
     tab {
         // Movement
-        bind "i" { GoToPreviousTab; }
-        bind "o" { GoToNextTab    ; }
+        bind "h" { GoToPreviousTab; }
+        bind "l" { GoToNextTab    ; }
         bind "1" { GoToTab 1      ; SwitchToMode "normal"; }
         bind "2" { GoToTab 2      ; SwitchToMode "normal"; }
         bind "3" { GoToTab 3      ; SwitchToMode "normal"; }
@@ -42,6 +42,9 @@ keybinds clear-defaults=true {
         bind "n" { NewTab;   SwitchToMode "normal"; }
         bind "d" { CloseTab; SwitchToMode "normal"; }
 
+        // Move
+        bind "H" { }
+        
         // Exit
         bind "Ctrl e" { SwitchToMode "normal"; }
 
@@ -68,11 +71,15 @@ keybinds clear-defaults=true {
         bind "-" { Resize "Decrease"; }
     }
     move {
-        // Movement
+        // Panes
         bind "h" { MovePane "left"  ; }
         bind "j" { MovePane "down"  ; }
         bind "k" { MovePane "up"    ; }
         bind "l" { MovePane "right" ; }
+
+        // Tabs
+        bind "H" { MoveTab "left" ; }
+        bind "L" { MoveTab "right"; }
 
         // Exit
         bind "Ctrl m" { SwitchToMode "normal"; }
@@ -126,15 +133,11 @@ keybinds clear-defaults=true {
         }
     }
     shared_except "locked" {
-        // Move Panes
-        bind "Alt H" { MovePane "left"  ; }
-        bind "Alt J" { MovePane "down"  ; }
-        bind "Alt K" { MovePane "up"    ; }
-        bind "Alt L" { MovePane "right" ; }
-
-        // Move Tabs
-        bind "Alt I" { MoveTab "left" ; }
-        bind "Alt O" { MoveTab "right"; }
+        // Movement Panes
+        bind "Alt h" { MoveFocusOrTab "left" ; }
+        bind "Alt j" { MoveFocus "down"      ; }
+        bind "Alt k" { MoveFocus "up"        ; }
+        bind "Alt l" { MoveFocusOrTab "right"; }
 
         // Resize Tabs
         bind "Alt +" { Resize "Increase"; }
@@ -155,15 +158,6 @@ keybinds clear-defaults=true {
         bind "Ctrl x" { SwitchToMode "session"; }
     }
     shared_except "locked" "scroll" {
-        // Movement Panes
-        bind "Alt h" { MoveFocusOrTab "left" ; }
-        bind "Alt j" { MoveFocus "down"      ; }
-        bind "Alt k" { MoveFocus "up"        ; }
-        bind "Alt l" { MoveFocusOrTab "right"; }
-
-        // Movement Tabs
-        bind "Alt i" { GoToPreviousTab; }
-        bind "Alt o" { GoToNextTab    ; }
     }
     shared_except "locked" "scroll" "search" "tmux" {
         bind "Ctrl b" { SwitchToMode "tmux"; }
