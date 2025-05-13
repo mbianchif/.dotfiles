@@ -1,4 +1,5 @@
 #!/bin/sh
 
-echo "🌟 Installing Starship prompt..."
+echo "🌟 Installing others..."
 curl -sS https://starship.rs/install.sh | sh
+cargo install --locked zellij
