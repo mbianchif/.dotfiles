@@ -119,6 +119,7 @@ fi
 
 alias ..='cd ..'
 alias ...='cd ../..'
+alias ....='cd ../../..'
 
 export EDITOR='hx'
 
