@@ -10,8 +10,9 @@ keybinds clear-defaults=true {
         bind "l" { MoveFocus "right"; }
 
         // Creation
-        bind "n" { NewPane   ; SwitchToMode "normal"; }
-        bind "d" { CloseFocus; }
+        bind "-" { NewPane "down";  SwitchToMode "normal"; }
+        bind "|" { NewPane "right"; SwitchToMode "normal"; }
+        bind "x" { CloseFocus; }
 
         // Exit
         bind "Ctrl a" { SwitchToMode "normal"; }
@@ -40,10 +41,11 @@ keybinds clear-defaults=true {
 
         // Creation / Deletion
         bind "n" { NewTab;   SwitchToMode "normal"; }
-        bind "d" { CloseTab; SwitchToMode "normal"; }
+        bind "x" { CloseTab; SwitchToMode "normal"; }
 
         // Move
-        bind "H" { }
+        bind "H" { MoveTab "left";  }
+        bind "L" { MoveTab "right"; }
         
         // Exit
         bind "Ctrl e" { SwitchToMode "normal"; }
@@ -56,11 +58,17 @@ keybinds clear-defaults=true {
         bind "s"   { ToggleActiveSyncTab     ; SwitchToMode "normal"; }
     }
     resize {
-        // Movement
+        // Increase
         bind "h" { Resize "Increase left" ; }
         bind "j" { Resize "Increase down" ; }
         bind "k" { Resize "Increase up"   ; }
         bind "l" { Resize "Increase right"; }
+
+        // Decrease
+        bind "H" { Resize "Decrease right"; }
+        bind "J" { Resize "Decrease up";    }
+        bind "K" { Resize "Decrease down";  }
+        bind "L" { Resize "Decrease left";  }
 
         // Exit
         bind "Ctrl r" { SwitchToMode "normal"; }
@@ -82,7 +90,7 @@ keybinds clear-defaults=true {
         bind "L" { MoveTab "right"; }
 
         // Exit
-        bind "Ctrl m" { SwitchToMode "normal"; }
+        bind "Ctrl h" { SwitchToMode "normal"; }
     }
     scroll {
         bind "e" { EditScrollback            ; SwitchToMode "normal"; }
@@ -147,12 +155,11 @@ keybinds clear-defaults=true {
         // Others
         bind "Alt ["  { PreviousSwapLayout   ; }
         bind "Alt ]"  { NextSwapLayout       ; }
-        bind "Alt f"  { ToggleFloatingPanes  ; }
         bind "Ctrl g" { SwitchToMode "locked"; }
         bind "Ctrl q" { Quit                 ; }
     }
     shared_except "locked" "move" {
-        bind "Ctrl m" { SwitchToMode "move"; }
+        bind "Ctrl h" { SwitchToMode "move"; }
     }
     shared_except "locked" "session" {
         bind "Ctrl x" { SwitchToMode "session"; }
