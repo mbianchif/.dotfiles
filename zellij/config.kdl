@@ -90,7 +90,7 @@ keybinds clear-defaults=true {
         bind "L" { MoveTab "right"; }
 
         // Exit
-        bind "Ctrl h" { SwitchToMode "normal"; }
+        bind "Ctrl o" { SwitchToMode "normal"; }
     }
     scroll {
         bind "e" { EditScrollback            ; SwitchToMode "normal"; }
@@ -159,7 +159,7 @@ keybinds clear-defaults=true {
         bind "Ctrl q" { Quit                 ; }
     }
     shared_except "locked" "move" {
-        bind "Ctrl h" { SwitchToMode "move"; }
+        bind "Ctrl o" { SwitchToMode "move"; }
     }
     shared_except "locked" "session" {
         bind "Ctrl x" { SwitchToMode "session"; }
