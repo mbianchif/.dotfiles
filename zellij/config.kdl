@@ -147,6 +147,10 @@ keybinds clear-defaults=true {
         bind "Alt k" { MoveFocus "up"        ; }
         bind "Alt l" { MoveFocusOrTab "right"; }
 
+        // Movement Tabs
+        bind "Alt H" { GoToPreviousTab; }
+        bind "Alt L" { GoToNextTab    ; }
+
         // Resize Tabs
         bind "Alt +" { Resize "Increase"; }
         bind "Alt =" { Resize "Increase"; }
