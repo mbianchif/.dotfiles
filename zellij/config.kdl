@@ -66,13 +66,13 @@ keybinds clear-defaults=true {
 
         // Decrease
         bind "H" { Resize "Decrease right"; }
-        bind "J" { Resize "Decrease up";    }
-        bind "K" { Resize "Decrease down";  }
-        bind "L" { Resize "Decrease left";  }
+        bind "J" { Resize "Decrease up"   ; }
+        bind "K" { Resize "Decrease down" ; }
+        bind "L" { Resize "Decrease left" ; }
 
         // Exit
         bind "Ctrl r" { SwitchToMode "normal"; }
-        
+
         // Resize
         bind "+" { Resize "Increase"; }
         bind "=" { Resize "Increase"; }
@@ -90,7 +90,7 @@ keybinds clear-defaults=true {
         bind "L" { MoveTab "right"; }
 
         // Exit
-        bind "Ctrl o" { SwitchToMode "normal"; }
+        bind "Ctrl m" { SwitchToMode "normal"; }
     }
     scroll {
         bind "e" { EditScrollback            ; SwitchToMode "normal"; }
@@ -103,8 +103,8 @@ keybinds clear-defaults=true {
 
         // Options
         bind "c" { SearchToggleOption "CaseSensitivity"; }
-        bind "o" { SearchToggleOption "WholeWord"; }
-        bind "w" { SearchToggleOption "Wrap"; }
+        bind "o" { SearchToggleOption "WholeWord"      ; }
+        bind "w" { SearchToggleOption "Wrap"           ; }
     }
     session {
         // Exit
@@ -163,7 +163,7 @@ keybinds clear-defaults=true {
         bind "Ctrl q" { Quit                 ; }
     }
     shared_except "locked" "move" {
-        bind "Ctrl o" { SwitchToMode "move"; }
+        bind "Ctrl m" { SwitchToMode "move"; }
     }
     shared_except "locked" "session" {
         bind "Ctrl x" { SwitchToMode "session"; }
@@ -452,7 +452,7 @@ copy_on_select true
 // (Requires restart)
 // Default: true (if the host terminal supports it)
 // 
-// support_kitty_keyboard_protocol false
+support_kitty_keyboard_protocol false
  
 // Whether to stack panes when resizing beyond a certain size
 // Default: true
