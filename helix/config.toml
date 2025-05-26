@@ -35,4 +35,5 @@ enable = true
 
 [editor.statusline]
 left = ["mode", "spinner", "spacer", "version-control", "spacer", "diagnostics"]
+center = ["file-name"]
 right = ["file-type", "file-encoding"]
