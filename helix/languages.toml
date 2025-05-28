@@ -14,3 +14,12 @@ formatter = { command = "taplo", args = ["fmt", "-"] }
 [[language]]
 name = "c"
 auto-format = true
+
+
+[[language]]
+name = "javascript"
+auto-format = true
+
+[[language]]
+name = "typescript"
+auto-format = true
