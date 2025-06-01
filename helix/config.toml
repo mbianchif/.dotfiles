@@ -27,9 +27,6 @@ hidden = false
 cursor-line = "warning"
 other-lines = "error"
 
-[editor.indent-guides]
-render = true
-skip-levels = 1
 
 [editor.soft-wrap]
 enable = true
