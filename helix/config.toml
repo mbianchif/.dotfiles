@@ -9,7 +9,6 @@ end-of-line-diagnostics = "hint"
 gutters = ["diff", "diagnostics", "line-numbers", "spacer"]
 line-number = "relative"
 text-width = 120
-popup-border = "all"
 true-color = true
 bufferline = "always"
 
@@ -28,6 +27,9 @@ hidden = false
 cursor-line = "warning"
 other-lines = "error"
 
+[editor.indent-guides]
+render = true
+skip-levels = 1
 
 [editor.soft-wrap]
 enable = true
