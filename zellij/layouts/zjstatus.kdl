@@ -3,11 +3,17 @@ layout {
         children
         pane size=1 borderless=true {
             plugin location="https://github.com/dj95/zjstatus/releases/latest/download/zjstatus.wasm" {
+                // Colors
+                color_orange "#d65d0e"
+
+                // Toggles
+                hide_frame_for_single_pane "true"
+
+                // Status bar format
                 format_left   "{mode} #[fg=bright_white,bold]{session}"
                 format_center "{tabs}"
 
-                hide_frame_for_single_pane "true"
-
+                // Mode formats
                 mode_normal    "#[fg=black,bg=red] "
                 mode_locked    "#[fg=black,bg=blue] "
                 mode_pane      "#[fg=black,bg=bright_green,bold] PANE "
@@ -17,11 +23,17 @@ layout {
                 mode_resize    "#[fg=black,bg=bright_green,bold] RESIZE "
                 mode_move      "#[fg=black,bg=bright_green,bold] MOVE "
                 mode_scroll    "#[fg=black,bg=bright_green,bold] SCROLL "
-                mode_enterpane "#[fg=black,bg=blue] "
-                mode_renametab "#[fg=black,bg=blue] "
-                mode_search    "#[fg=black,bg=blue] "
 
-                tab_normal " #[fg=white] {name}"
+                mode_rename_pane "#[fg=black,bg=$orange] "
+                mode_rename_tab  "#[fg=black,bg=$orange] "
+                
+                mode_enter_search "#[fg=black,bg=yellow] "
+                mode_search       "#[fg=black,bg=yellow] "
+                mode_enterpane    "#[fg=black,bg=cyan] "
+                mode_prompt       "#[fg=black,bg=cyan] "
+
+                // Tab formats
+                tab_normal " #[fg=black] {name}"
                 tab_active " #[fg=bright_white,italic] {name}"
             }
         }
