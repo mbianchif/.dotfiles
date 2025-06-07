@@ -1,15 +1,14 @@
 theme = "gruvbox_dark_hard"
 
 [editor]
+bufferline = "multiple"
 color-modes = true
 completion-timeout = 5
 cursorline = true
 end-of-line-diagnostics = "hint"
 gutters = ["spacer", "diagnostics", "line-numbers", "spacer", "diff"]
 line-number = "relative"
-text-width = 120
 true-color = true
-bufferline = "always"
 
 [editor.cursor-shape]
 insert = "bar"
@@ -30,3 +29,6 @@ enable = true
 left = ["mode", "spinner", "spacer", "version-control", "spacer", "diagnostics"]
 center = ["file-name"]
 right = ["file-type", "file-encoding"]
+
+[keys.normal]
+esc = ["collapse_selection", "keep_primary_selection"]
