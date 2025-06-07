@@ -16,7 +16,7 @@ layout {
                 mode_tmux      "#[bg=bright_green,bold] TMUX "
                 mode_resize    "#[bg=bright_green,bold] RESIZE "
                 mode_move      "#[bg=bright_green,bold] MOVE "
-                mode_scroll    "#[bg=bright_green] "
+                mode_scroll    "#[bg=bright_green,bold] SCROLL "
                 mode_enterpane "#[bg=bright_green] "
                 mode_renametab "#[bg=bright_green] "
                 mode_search    "#[bg=bright_green] "

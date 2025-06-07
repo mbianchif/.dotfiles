@@ -12,7 +12,7 @@ keybinds clear-defaults=true {
         // Creation
         bind "-" { NewPane "down";  SwitchToMode "normal"; }
         bind "|" { NewPane "right"; SwitchToMode "normal"; }
-        bind "x" { CloseFocus; }
+        bind "q" { CloseFocus; }
 
         // Exit
         bind "Ctrl a" { SwitchToMode "normal"; }
@@ -41,7 +41,7 @@ keybinds clear-defaults=true {
 
         // Creation / Deletion
         bind "n" { NewTab;   SwitchToMode "normal"; }
-        bind "x" { CloseTab; SwitchToMode "normal"; }
+        bind "q" { CloseTab; SwitchToMode "normal"; }
 
         // Move
         bind "H" { MoveTab "left";  }
@@ -142,10 +142,10 @@ keybinds clear-defaults=true {
     }
     shared_except "locked" {
         // Movement Panes
-        bind "Alt h" { MoveFocusOrTab "left" ; }
-        bind "Alt j" { MoveFocus "down"      ; }
-        bind "Alt k" { MoveFocus "up"        ; }
-        bind "Alt l" { MoveFocusOrTab "right"; }
+        bind "Alt h" { MoveFocus "left" ; }
+        bind "Alt j" { MoveFocus "down" ; }
+        bind "Alt k" { MoveFocus "up"   ; }
+        bind "Alt l" { MoveFocus "right"; }
 
         // Movement Tabs
         bind "Alt H" { GoToPreviousTab; }
