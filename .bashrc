@@ -121,7 +121,7 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 
-export EDITOR='hx'
+export EDITOR='/home/linuxbrew/.linuxbrew/bin/hx'
 
 # Starship
 export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
