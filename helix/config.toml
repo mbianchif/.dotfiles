@@ -1,36 +1,30 @@
 theme = "gruvbox_dark_hard"
 
-
 [editor]
 color-modes = true
 completion-timeout = 5
 cursorline = true
 end-of-line-diagnostics = "hint"
-gutters = ["diff", "spacer", "diagnostics", "line-numbers", "spacer"]
+gutters = ["spacer", "diagnostics", "line-numbers", "spacer", "diff"]
 line-number = "relative"
 text-width = 120
 true-color = true
 bufferline = "always"
-
 
 [editor.cursor-shape]
 insert = "bar"
 normal = "block"
 select = "underline"
 
-
 [editor.file-picker]
 hidden = false
-
 
 [editor.inline-diagnostics]
 cursor-line = "warning"
 other-lines = "error"
 
-
 [editor.soft-wrap]
 enable = true
-
 
 [editor.statusline]
 left = ["mode", "spinner", "spacer", "version-control", "spacer", "diagnostics"]
