@@ -1,0 +1,8 @@
+format = """
+$directory$git_branch$git_status$character
+"""
+
+[git_branch]
+style = 'fg:red'
+symbol = ''
+format = '[$symbol $branch]($style) '

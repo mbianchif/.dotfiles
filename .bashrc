@@ -124,6 +124,7 @@ alias ....='cd ../../..'
 export EDITOR='hx'
 
 # Starship
+export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 eval "$(starship init bash)"
 
 # Rust
