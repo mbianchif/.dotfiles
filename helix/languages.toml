@@ -1,20 +1,17 @@
 [[language]]
-name = "python"
-auto-format = true
-formatter = { command = "black", args = ["-"] }
-language-servers = ["pyright"]
-
-
-[[language]]
 name = "toml"
 auto-format = true
 formatter = { command = "taplo", args = ["fmt", "-"] }
-
 
 [[language]]
 name = "c"
 auto-format = true
 
+[[language]]
+name = "python"
+auto-format = true
+formatter = { command = "black", args = ["-"] }
+language-servers = ["pyright"]
 
 [[language]]
 name = "javascript"
@@ -22,4 +19,12 @@ auto-format = true
 
 [[language]]
 name = "typescript"
+auto-format = true
+
+[[language]]
+name = "tsx"
+auto-format = true
+
+[[language]]
+name = "jsx"
 auto-format = true
