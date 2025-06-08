@@ -33,7 +33,7 @@ layout {
                 mode_prompt       "#[fg=black,bg=cyan] "
 
                 // Tab formats
-                tab_normal " #[fg=black] {name}"
+                tab_normal " #[fg=bright_black] {name}"
                 tab_active " #[fg=bright_white,italic] {name}"
             }
         }
