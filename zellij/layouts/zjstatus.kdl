@@ -10,7 +10,7 @@ layout {
                 format_left   "{mode} #[fg=bright_white,bold]{session}"
                 format_center "{tabs}"
 
-                // Mode formats
+                // Mode formating
                 mode_normal    "#[fg=black,bg=red] "
                 mode_locked    "#[fg=black,bg=blue] "
                 mode_pane      "#[fg=black,bg=bright_green,bold] PANE "
@@ -29,9 +29,15 @@ layout {
                 mode_enterpane    "#[fg=black,bg=cyan] "
                 mode_prompt       "#[fg=black,bg=cyan] "
 
-                // Tab formats
-                tab_normal " #[fg=bright_black] {name}"
-                tab_active " #[fg=bright_white,italic] {name}"
+                // Tab formating
+                tab_normal "#[fg=bright_black] {name} "
+                tab_active "#[fg=bright_white,italic] {name} "
+
+                tab_normal_fullscreen "#[fg=bright_black] [{name}] "
+                tab_active_fullscreen "#[fg=bright_white,italic] [{name}] "
+
+                tab_normal_sync "#[fg=bright_black] <{name}> "
+                tab_active_sync "#[fg=bright_white,italic] <{name}> "
             }
         }
     }
