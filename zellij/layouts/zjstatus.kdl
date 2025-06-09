@@ -6,9 +6,6 @@ layout {
                 // Colors
                 color_orange "#d65d0e"
 
-                // Toggles
-                hide_frame_for_single_pane "true"
-
                 // Status bar format
                 format_left   "{mode} #[fg=bright_white,bold]{session}"
                 format_center "{tabs}"
