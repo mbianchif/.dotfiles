@@ -4,40 +4,59 @@ layout {
         pane size=1 borderless=true {
             plugin location="https://github.com/dj95/zjstatus/releases/latest/download/zjstatus.wasm" {
                 // Colors
+                color_red    "#cc241d"
+                color_green  "#98971a"
+                color_yellow "#d79921"
+                color_blue   "#458588"
+                color_purple "#b16286"
+                color_aqua   "#689d6a"
                 color_orange "#d65d0e"
+                color_gray   "#928374"
+
+                color_bg0 "#282828"
+                color_bg1 "#3c3836"
+                color_bg2 "#504945"
+                color_bg3 "#665c54"
+                color_bg4 "#7c6f64"
+
+                color_fg0 "#fbf1c7"
+                color_fg1 "#ebdbb2"
+                color_fg2 "#d5c4a1"
+                color_fg3 "#bdae93"
+                color_fg4 "#a89984"
 
                 // Status bar format
-                format_left   "{mode} #[fg=bright_white,bold]{session}"
-                format_center "{tabs}"
+                format_left  "{mode} {tabs}"
+                format_right "#[fg=$fg0,bold]{session} "
 
                 // Mode formating
-                mode_normal    "#[fg=black,bg=red] "
-                mode_locked    "#[fg=black,bg=blue] "
-                mode_pane      "#[fg=black,bg=bright_green,bold] PANE "
-                mode_tab       "#[fg=black,bg=bright_green,bold] TAB "
-                mode_session   "#[fg=black,bg=bright_green,bold] SESSION "
-                mode_tmux      "#[fg=black,bg=bright_green,bold] TMUX "
-                mode_resize    "#[fg=black,bg=bright_green,bold] RESIZE "
-                mode_move      "#[fg=black,bg=bright_green,bold] MOVE "
-                mode_scroll    "#[fg=black,bg=bright_green,bold] SCROLL "
+                mode_normal  "#[fg=$fg4,bg=$fg3,bold] NOR "
+                mode_locked  "#[fg=$fg4,bg=$orange,bold] LCK "
+                mode_pane    "#[fg=$fg4,bg=$orange,bold] PAN "
+                mode_tab     "#[fg=$fg4,bg=$orange,bold] TAB "
+                mode_session "#[fg=$fg4,bg=$orange,bold] SES "
+                mode_tmux    "#[fg=$fg4,bg=$orange,bold] TMX "
+                mode_resize  "#[fg=$fg4,bg=$orange,bold] RSZ "
+                mode_move    "#[fg=$fg4,bg=$orange,bold] MOV "
+                mode_scroll  "#[fg=$fg4,bg=$orange,bold] SCR "
 
-                mode_rename_pane "#[fg=black,bg=$orange] "
-                mode_rename_tab  "#[fg=black,bg=$orange] "
-                
-                mode_enter_search "#[fg=black,bg=yellow] "
-                mode_search       "#[fg=black,bg=yellow] "
-                mode_enterpane    "#[fg=black,bg=cyan] "
-                mode_prompt       "#[fg=black,bg=cyan] "
+                mode_rename_pane  "#[fg=$fg4,bg=$yellow] PAN "
+                mode_rename_tab   "#[fg=$fg4,bg=$yellow] TAB "
+                mode_enter_search "#[fg=$fg4,bg=$yellow] ESR "
+                mode_search       "#[fg=$fg4,bg=$yellow] SRC "
+
+                mode_enterpane "#[fg=$fg4,bg=$green] {name} "
+                mode_prompt    "#[fg=$fg4,bg=$green] {name} "
 
                 // Tab formating
-                tab_normal "#[fg=bright_black] {name} "
-                tab_active "#[fg=bright_white,italic] {name} "
+                tab_normal "#[fg=$bg2] {name} "
+                tab_active "#[fg=$fg1,italic] {name} "
 
-                tab_normal_fullscreen "#[fg=bright_black] [{name}] "
-                tab_active_fullscreen "#[fg=bright_white,italic] [{name}] "
+                tab_normal_fullscreen "#[fg=$bg2] [{name}] "
+                tab_active_fullscreen "#[fg=$fg1,italic] [{name}] "
 
-                tab_normal_sync "#[fg=bright_black] <{name}> "
-                tab_active_sync "#[fg=bright_white,italic] <{name}> "
+                tab_normal_sync "#[fg=$bg2] <{name}> "
+                tab_active_sync "#[fg=$fg1,italic] <{name}> "
             }
         }
     }
