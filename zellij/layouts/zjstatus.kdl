@@ -26,37 +26,38 @@ layout {
                 color_fg4 "#a89984"
 
                 // Status bar format
-                format_left  "{mode} {tabs}"
-                format_right "#[fg=$fg0,bold]{session} "
+                format_left   "{mode}"
+                format_center "{tabs}"
+                format_right  "#[fg=$fg1]{session} "
 
                 // Mode formating
-                mode_normal  "#[fg=$fg4,bg=$fg3,bold] NOR "
-                mode_locked  "#[fg=$fg4,bg=$orange,bold] LCK "
-                mode_pane    "#[fg=$fg4,bg=$orange,bold] PAN "
-                mode_tab     "#[fg=$fg4,bg=$orange,bold] TAB "
-                mode_session "#[fg=$fg4,bg=$orange,bold] SES "
-                mode_tmux    "#[fg=$fg4,bg=$orange,bold] TMX "
-                mode_resize  "#[fg=$fg4,bg=$orange,bold] RSZ "
-                mode_move    "#[fg=$fg4,bg=$orange,bold] MOV "
-                mode_scroll  "#[fg=$fg4,bg=$orange,bold] SCR "
+                mode_normal  "#[fg=$green,bold] NOR "
+                mode_locked  "#[fg=$orange,bold] LCK "
+                mode_pane    "#[fg=$orange,bold] PAN "
+                mode_tab     "#[fg=$orange,bold] TAB "
+                mode_session "#[fg=$orange,bold] SES "
+                mode_tmux    "#[fg=$orange,bold] TMX "
+                mode_resize  "#[fg=$orange,bold] RSZ "
+                mode_move    "#[fg=$orange,bold] MOV "
+                mode_scroll  "#[fg=$orange,bold] SCR "
 
-                mode_rename_pane  "#[fg=$fg4,bg=$yellow] PAN "
-                mode_rename_tab   "#[fg=$fg4,bg=$yellow] TAB "
-                mode_enter_search "#[fg=$fg4,bg=$yellow] ESR "
-                mode_search       "#[fg=$fg4,bg=$yellow] SRC "
+                mode_rename_pane  "#[fg=$yellow,bold] PAN "
+                mode_rename_tab   "#[fg=$yellow,bold] TAB "
+                mode_enter_search "#[fg=$yellow,bold] SCH "
+                mode_search       "#[fg=$yellow,bold] SCH "
 
-                mode_enterpane "#[fg=$fg4,bg=$green] {name} "
-                mode_prompt    "#[fg=$fg4,bg=$green] {name} "
+                mode_enterpane "#[fg=$red,bold] {EPN} "
+                mode_prompt    "#[fg=$red,bold] {PRM} "
 
                 // Tab formating
-                tab_normal "#[fg=$bg2] {name} "
-                tab_active "#[fg=$fg1,italic] {name} "
+                tab_normal "#[fg=$bg1] {name} "
+                tab_active "#[fg=$fg2,italic] {name} "
 
-                tab_normal_fullscreen "#[fg=$bg2] [{name}] "
-                tab_active_fullscreen "#[fg=$fg1,italic] [{name}] "
+                tab_normal_fullscreen "#[fg=$bg1] [{name}] "
+                tab_active_fullscreen "#[fg=$fg2,italic] [{name}] "
 
-                tab_normal_sync "#[fg=$bg2] <{name}> "
-                tab_active_sync "#[fg=$fg1,italic] <{name}> "
+                tab_normal_sync "#[fg=$bg1] <{name}> "
+                tab_active_sync "#[fg=$fg2,italic] <{name}> "
             }
         }
     }

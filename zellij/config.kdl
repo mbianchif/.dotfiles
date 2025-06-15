@@ -9,10 +9,16 @@ keybinds clear-defaults=true {
         bind "k" { MoveFocus "up"   ; }
         bind "l" { MoveFocus "right"; }
 
-        // Creation
-        bind "-" { NewPane "down";  SwitchToMode "normal"; }
+        // Move
+        bind "H" { MovePane "left" ; }
+        bind "J" { MovePane "down" ; }
+        bind "K" { MovePane "up"   ; }
+        bind "L" { MovePane "right"; }
+
+        // Creation / Deletion
+        bind "-" { NewPane "down" ; SwitchToMode "normal"; }
         bind "|" { NewPane "right"; SwitchToMode "normal"; }
-        bind "q" { CloseFocus; }
+        bind "q" { CloseFocus     ; }
 
         // Exit
         bind "Ctrl a" { SwitchToMode "normal"; }
@@ -168,8 +174,6 @@ keybinds clear-defaults=true {
     shared_except "locked" "session" {
         bind "Ctrl x" { SwitchToMode "session"; }
     }
-    shared_except "locked" "scroll" {
-    }
     shared_except "locked" "scroll" "search" "tmux" {
         bind "Ctrl b" { SwitchToMode "tmux"; }
     }
@@ -188,9 +192,6 @@ keybinds clear-defaults=true {
     shared_except "normal" "locked" "entersearch" {
         bind "enter" { SwitchToMode "normal"; }
         bind "esc"   { SwitchToMode "normal"; }
-    }
-    shared_among "pane" "tmux" {
-        bind "x" { CloseFocus; SwitchToMode "normal"; }
     }
     shared_among "scroll" "search" {
         bind "PageDown" { PageScrollDown; }
@@ -459,4 +460,4 @@ show_startup_tips false
 // Whether to show release notes on first version run
 // Default: true
 // 
-show_release_notes false
+// show_release_notes false
