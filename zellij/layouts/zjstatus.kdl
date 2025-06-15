@@ -31,22 +31,19 @@ layout {
 
                 // Mode formating
                 mode_normal  "#[fg=$fg4,bg=$bg0,bold] NOR "
-                mode_locked  "#[fg=$blue,bg=$bg0,bold] LCK "
-                mode_pane    "#[fg=$red,bg=$bg0,bold] PAN "
-                mode_tab     "#[fg=$red,bg=$bg0,bold] TAB "
-                mode_session "#[fg=$red,bg=$bg0,bold] SES "
-                mode_tmux    "#[fg=$red,bg=$bg0,bold] TMX "
-                mode_resize  "#[fg=$red,bg=$bg0,bold] RSZ "
-                mode_move    "#[fg=$red,bg=$bg0,bold] MOV "
-                mode_scroll  "#[fg=$red,bg=$bg0,bold] SCR "
+                mode_locked  "#[fg=$red,bg=$bg0,bold] LCK "
+                mode_pane    "#[fg=$orange,bg=$bg0,bold] PAN "
+                mode_tab     "#[fg=$orange,bg=$bg0,bold] TAB "
+                mode_session "#[fg=$orange,bg=$bg0,bold] SES "
+                mode_tmux    "#[fg=$orange,bg=$bg0,bold] TMX "
+                mode_resize  "#[fg=$orange,bg=$bg0,bold] RSZ "
+                mode_move    "#[fg=$orange,bg=$bg0,bold] MOV "
+                mode_scroll  "#[fg=$orange,bg=$bg0,bold] SCR "
 
-                mode_rename_pane  "#[fg=$orange,bg=$bg0] PAN "
-                mode_rename_tab   "#[fg=$orange,bg=$bg0] TAB "
-                mode_enter_search "#[fg=$orange,bg=$bg0] ESR "
-                mode_search       "#[fg=$orange,bg=$bg0] SRC "
-
-                mode_enterpane "#[fg=$yellow,bg=$bg0] {name} "
-                mode_prompt    "#[fg=$yellow,bg=$bg0] {name} "
+                mode_rename_pane  "#[fg=$yellow,bg=$bg0] PAN "
+                mode_rename_tab   "#[fg=$yellow,bg=$bg0] TAB "
+                mode_enter_search "#[fg=$yellow,bg=$bg0] ESR "
+                mode_search       "#[fg=$yellow,bg=$bg0] SRC "
 
                 // Tab formating
                 tab_normal "#[fg=$bg2] {name} "
