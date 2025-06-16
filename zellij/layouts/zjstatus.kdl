@@ -26,8 +26,7 @@ layout {
                 color_fg4 "#a89984"
 
                 // Status bar format
-                format_left   "{mode}"
-                format_center "{tabs}"
+                format_left   "{mode} {tabs}"
                 format_right  "#[fg=$fg1]{session} "
 
                 // Mode formating
