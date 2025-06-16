@@ -40,10 +40,10 @@ layout {
                 mode_move    "#[fg=$orange,bg=$bg0,bold] MOV "
                 mode_scroll  "#[fg=$orange,bg=$bg0,bold] SCR "
 
-                mode_rename_pane  "#[fg=$yellow,bg=$bg0] PAN "
-                mode_rename_tab   "#[fg=$yellow,bg=$bg0] TAB "
-                mode_enter_search "#[fg=$yellow,bg=$bg0] ESR "
-                mode_search       "#[fg=$yellow,bg=$bg0] SRC "
+                mode_rename_pane  "#[fg=$yellow,bg=$bg0,bold] PAN "
+                mode_rename_tab   "#[fg=$yellow,bg=$bg0,bold] TAB "
+                mode_enter_search "#[fg=$yellow,bg=$bg0,bold] ESR "
+                mode_search       "#[fg=$yellow,bg=$bg0,bold] SRC "
 
                 // Tab formating
                 tab_normal "#[fg=$bg2] {name} "
