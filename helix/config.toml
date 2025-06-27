@@ -6,6 +6,7 @@ color-modes = true
 completion-timeout = 5
 cursorline = true
 end-of-line-diagnostics = "hint"
+idle-timeout = 0
 gutters = ["spacer", "diagnostics", "line-numbers", "spacer", "diff"]
 line-number = "relative"
 true-color = true
