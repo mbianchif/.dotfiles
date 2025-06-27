@@ -1,7 +1,7 @@
 theme = "gruvbox_dark_hard"
 
 [editor]
-bufferline = "multiple"
+bufferline = "always"
 color-modes = true
 completion-timeout = 5
 cursorline = true
@@ -17,6 +17,7 @@ select = "underline"
 
 [editor.file-picker]
 hidden = false
+git-ignore = false
 
 [editor.inline-diagnostics]
 cursor-line = "warning"
@@ -26,9 +27,8 @@ other-lines = "error"
 enable = true
 
 [editor.statusline]
-left = ["mode", "spinner", "spacer", "version-control", "spacer", "diagnostics"]
-center = ["file-name"]
-right = ["file-type", "file-encoding"]
+left = ["mode", "spinner", "file-name", "diagnostics"]
+right = ["version-control", "spacer", "file-type", "file-encoding"]
 
 [keys.normal]
 esc = ["collapse_selection", "keep_primary_selection"]
