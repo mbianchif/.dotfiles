@@ -6,7 +6,6 @@ color-modes = true
 completion-timeout = 5
 cursorline = true
 end-of-line-diagnostics = "hint"
-idle-timeout = 0
 gutters = ["spacer", "diagnostics", "line-numbers", "spacer", "diff"]
 line-number = "relative"
 true-color = true
@@ -28,8 +27,14 @@ other-lines = "error"
 enable = true
 
 [editor.statusline]
-left = ["mode", "spinner", "file-name", "diagnostics"]
-right = ["version-control", "spacer", "file-type", "file-encoding"]
+left = ["mode", "spinner", "file-name"]
+right = [
+  "diagnostics",
+  "version-control",
+  "selections",
+  "register",
+  "file-encoding",
+]
 
 [keys.normal]
 esc = ["collapse_selection", "keep_primary_selection"]
