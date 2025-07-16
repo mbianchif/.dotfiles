@@ -8,7 +8,9 @@ cursorline = true
 end-of-line-diagnostics = "hint"
 gutters = ["diff", "diagnostics", "line-numbers", "spacer", "spacer", "spacer"]
 line-number = "relative"
+mouse = false
 true-color = true
+undercurl = true
 
 [editor.cursor-shape]
 insert = "bar"
@@ -27,7 +29,13 @@ other-lines = "error"
 enable = true
 
 [editor.statusline]
-left = ["mode", "spinner", "spacer", "version-control", "spacer", "file-name"]
+right = [
+  "diagnostics",
+  "register",
+  "file-encoding",
+  "version-control",
+  "file-type",
+]
 
 #
 # Keybinds
