@@ -6,6 +6,7 @@ formatter = { command = "taplo", args = ["fmt", "-"] }
 
 [[language]]
 name = "c"
+auto-format = true
 file-types = ["c", "h"]
 indent = { tab-width = 4, unit = "    " }
 

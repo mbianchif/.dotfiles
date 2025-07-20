@@ -2,13 +2,11 @@ theme = "gruvbox_dark_hard"
 
 [editor]
 bufferline = "always"
-color-modes = true
 completion-timeout = 5
 cursorline = true
 end-of-line-diagnostics = "hint"
 gutters = ["diff", "diagnostics", "line-numbers", "spacer", "spacer", "spacer"]
 line-number = "relative"
-mouse = false
 true-color = true
 undercurl = true
 
