@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 echo "🌟 Installing others..."
 curl -sS https://starship.rs/install.sh | sh
