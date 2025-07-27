@@ -8,7 +8,9 @@ formatter = { command = "taplo", args = ["fmt", "-"] }
 name = "c"
 auto-format = true
 file-types = ["c", "h"]
-indent = { tab-width = 4, unit = "    " }
+formatter = { command = "clang-format", args = [
+  "--style={IndentWidth: 4, TabWidth: 4, UseTab: Never}",
+] }
 
 [[language]]
 name = "python"
