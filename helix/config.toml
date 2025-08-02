@@ -23,20 +23,11 @@ git-ignore = false
 cursor-line = "warning"
 other-lines = "error"
 
-[editor.indent-guides]
-render = true
-
 [editor.soft-wrap]
 enable = true
 
 [editor.statusline]
-right = [
-  "diagnostics",
-  "register",
-  "file-encoding",
-  "version-control",
-  "file-type",
-]
+right = ["diagnostics", "version-control", "file-type"]
 
 #
 # Keybinds

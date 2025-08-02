@@ -30,30 +30,30 @@ layout {
                 format_right  "#[fg=$fg1]{session} "
 
                 // Mode formating
-                mode_normal  "#[fg=$fg4,bold] NOR "
-                mode_locked  "#[fg=$fg4,bold] LCK "
-                mode_pane    "#[fg=$fg4,bold] PAN "
-                mode_tab     "#[fg=$fg4,bold] TAB "
-                mode_session "#[fg=$fg4,bold] SES "
-                mode_tmux    "#[fg=$fg4,bold] TMX "
-                mode_resize  "#[fg=$fg4,bold] RSZ "
-                mode_move    "#[fg=$fg4,bold] MOV "
-                mode_scroll  "#[fg=$fg4,bold] SCR "
+                mode_normal  "#[fg=$fg4] NOR "
+                mode_locked  "#[fg=$fg4] LCK "
+                mode_pane    "#[fg=$fg4] PAN "
+                mode_tab     "#[fg=$fg4] TAB "
+                mode_session "#[fg=$fg4] SES "
+                mode_tmux    "#[fg=$fg4] TMX "
+                mode_resize  "#[fg=$fg4] RSZ "
+                mode_move    "#[fg=$fg4] MOV "
+                mode_scroll  "#[fg=$fg4] SCR "
 
-                mode_rename_pane  "#[fg=$fg4,bold] PAN "
-                mode_rename_tab   "#[fg=$fg4,bold] TAB "
-                mode_enter_search "#[fg=$fg4,bold] ESR "
-                mode_search       "#[fg=$fg4,bold] SRC "
+                mode_rename_pane  "#[fg=$fg4] PAN "
+                mode_rename_tab   "#[fg=$fg4] TAB "
+                mode_enter_search "#[fg=$fg4] ESR "
+                mode_search       "#[fg=$fg4] SRC "
 
                 // Tab formating
                 tab_normal "#[fg=$bg2] {name} "
-                tab_active "#[fg=$fg1,italic,bold] {name} "
+                tab_active "#[fg=$fg1,italic] {name} "
 
                 tab_normal_fullscreen "#[fg=$bg2] [{name}] "
-                tab_active_fullscreen "#[fg=$fg1,italic,bold] [{name}] "
+                tab_active_fullscreen "#[fg=$fg1,italic] [{name}] "
 
                 tab_normal_sync "#[fg=$bg2] <{name}> "
-                tab_active_sync "#[fg=$fg1,italic,bold] <{name}> "
+                tab_active_sync "#[fg=$fg1,italic] <{name}> "
             }
         }
     }
