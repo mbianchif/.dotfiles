@@ -1,5 +1,5 @@
 # font
-font-family = "Monaspace Neon"
+font-family = "JetBrains Mono NL"
 font-feature = -liga -calt -dlig
 font-style = medium
 font-size = 14

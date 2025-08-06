@@ -151,8 +151,6 @@ export PATH="$PATH:/snap/bin"
 # HomeBrew
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
-. "$HOME/.local/bin/env"
-
 # Zellij auto tab renaming
 __last_zellij_tab_name=""
 
@@ -196,3 +194,7 @@ __zellij_precmd() {
 
 trap '__zellij_preexec' DEBUG
 PROMPT_COMMAND="__zellij_precmd; $PROMPT_COMMAND"
+
+if [[ -f "$HOME/.local/bin/env" ]]; then
+    . "$HOME/.local/bin/env"
+fi
