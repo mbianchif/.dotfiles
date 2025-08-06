@@ -54,12 +54,6 @@ layout {
 
                 tab_active_fullscreen " #[fg=$bg2]{index}:[#[fg=$fg1,italic]{name}#[fg=$bg2]] "
                 tab_normal_fullscreen " #[fg=$bg2]{index}:[{name}] "
-
-                // Git branch
-                command_git_branch_command     "git rev-parse --abbrev-ref HEAD"
-                command_git_branch_format      "#[fg=$blue] {stdout} "
-                command_git_branch_interval    "10"
-                command_git_branch_rendermode  "static"
             }
         }
     }
