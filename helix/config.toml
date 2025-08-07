@@ -1,7 +1,6 @@
 theme = "gruvbox"
 
 [editor]
-bufferline = "multiple"
 completion-timeout = 5
 cursorline = true
 end-of-line-diagnostics = "hint"
