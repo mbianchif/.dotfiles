@@ -123,10 +123,6 @@ alias ....='cd ../../..'
 
 export EDITOR='/home/linuxbrew/.linuxbrew/bin/hx'
 
-# Starship
-export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
-eval "$(starship init bash)"
-
 # Rust
 export PATH="$PATH:$HOME/.cargo/bin"
 export PATH="$PATH:$HOME/.cargo/env"
@@ -151,50 +147,11 @@ export PATH="$PATH:/snap/bin"
 # HomeBrew
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
-# Zellij auto tab renaming
-__last_zellij_tab_name=""
-
-__zellij_preexec() {
-    local cmd="${BASH_COMMAND%% *}"
-    [[ -z "$cmd" ]] && return
-
-    local cmd_type=$(type -t "$cmd")
-
-    if [[ "$cmd_type" == "file" ]]; then
-        __last_zellij_tab_name="$cmd"
-        zellij action rename-tab "$cmd" 2>/dev/null
-    fi
-}
-
-__zellij_precmd() {
-    if [[ "$__last_zellij_tab_name" == "" ]]; then
-        zellij action rename-tab "bash" 2>/dev/null
-        return
-    fi
-
-    local pgid
-    pgid=$(ps -o pgid= $$ | tr -d ' ')
-    local pid
-    if [[ "$pgid" =~ ^[0-9]+$ ]]; then
-        pid=$(pgrep -g "$pgid" | grep -v "^$$\$" | head -n 1)
-    fi
-
-    local current_cmd=""
-    if [[ -n "$pid" ]]; then
-        current_cmd=$(ps -p "$pid" -o comm=)
-    fi
-
-    if [[ -z "$current_cmd" || "$current_cmd" == "bash" ]]; then
-        if [[ "$__last_zellij_tab_name" != "bash" ]]; then
-            __last_zellij_tab_name="bash"
-            zellij action rename-tab "bash" 2>/dev/null
-        fi
-    fi
-}
-
-trap '__zellij_preexec' DEBUG
-PROMPT_COMMAND="__zellij_precmd; $PROMPT_COMMAND"
-
 if [[ -f "$HOME/.local/bin/env" ]]; then
     . "$HOME/.local/bin/env"
 fi
+
+# Starship
+export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
+eval "$(starship init bash)"
+
