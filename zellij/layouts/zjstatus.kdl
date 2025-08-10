@@ -27,31 +27,30 @@ layout {
                 // Status bar format
                 format_left   "{mode}"
                 format_center "{tabs}"
-                format_right  "#[bg=$bg0,fg=$fg1,bold]{session} "
-                format_space  "#[bg=$bg0]"
+                format_right  "{session} "
 
                 // Mode formating
-                mode_normal  "#[bg=$bg0,fg=$fg4] {name} "
-                mode_locked  "#[bg=$bg0,fg=$fg4] {name} "
-                mode_pane    "#[bg=$bg0,fg=$fg4] {name} "
-                mode_tab     "#[bg=$bg0,fg=$fg4] {name} "
-                mode_session "#[bg=$bg0,fg=$fg4] {name} "
-                mode_tmux    "#[bg=$bg0,fg=$fg4] {name} "
-                mode_resize  "#[bg=$bg0,fg=$fg4] {name} "
-                mode_move    "#[bg=$bg0,fg=$fg4] {name} "
-                mode_scroll  "#[bg=$bg0,fg=$fg4] {name} "
+                mode_normal  "#[fg=$fg4] {name} "
+                mode_locked  "#[fg=$fg4] {name} "
+                mode_pane    "#[fg=$fg4] {name} "
+                mode_tab     "#[fg=$fg4] {name} "
+                mode_session "#[fg=$fg4] {name} "
+                mode_tmux    "#[fg=$fg4] {name} "
+                mode_resize  "#[fg=$fg4] {name} "
+                mode_move    "#[fg=$fg4] {name} "
+                mode_scroll  "#[fg=$fg4] {name} "
 
-                mode_rename_pane  "#[bg=$bg0,fg=$fg4] {name} "
-                mode_rename_tab   "#[bg=$bg0,fg=$fg4] {name} "
-                mode_enter_search "#[bg=$bg0,fg=$fg4] {name} "
-                mode_search       "#[bg=$bg0,fg=$fg4] {name} "
+                mode_rename_pane  "#[fg=$fg4] {name} "
+                mode_rename_tab   "#[fg=$fg4] {name} "
+                mode_enter_search "#[fg=$fg4] {name} "
+                mode_search       "#[fg=$fg4] {name} "
 
                 // Tab formating
-                tab_active "#[fg=$fg2,bg=$bg1,italic] {name} "
-                tab_normal "#[bg=$bg0,fg=$fg4] {name} "
+                tab_active "#[bg=$bg1,fg=$fg2,italic] {name} "
+                tab_normal "#[fg=$fg4] {name} "
 
-                tab_active_fullscreen " #[fg=$fg4][#[fg=$fg1,italic]{name}#[fg=$fg4]] "
-                tab_normal_fullscreen " #[fg=$fg4][{name}] "
+                tab_active_fullscreen "#[bg=$bg1,fg=$fg2] [#[bg=$bg1,fg=$fg2,italic]{name}#[bg=$bg1,fg=$fg2]] "
+                tab_normal_fullscreen "#[fg=$fg2] [{name}] "
             }
         }
         children
