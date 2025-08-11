@@ -13,7 +13,7 @@ cargo install taplo-cli --locked --features lsp
 
 # Python
 uv tool install ruff@latest
-uv tool install pyright@latest
+uv tool install basedpyright@latest
 
 # Go
 go install golang.org/x/tools/gopls@latest

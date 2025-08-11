@@ -1,7 +1,6 @@
 [[language]]
 name = "toml"
 auto-format = true
-formatter = { command = "taplo", args = ["fmt", "-"] }
 
 
 [[language]]
@@ -12,11 +11,15 @@ formatter = { command = "clang-format", args = [
   "--style={IndentWidth: 4, TabWidth: 4, UseTab: Never}",
 ] }
 
+
 [[language]]
 name = "python"
 auto-format = true
 formatter = { command = "ruff", args = ["format", "-"] }
-language-servers = ["pyright"]
+language-servers = ["basedpyright"]
+
+[language-server.basedpyright.config]
+basedpyright.analysis.typeCheckingMode = "standard"
 
 
 [[language]]
