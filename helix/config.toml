@@ -1,5 +1,9 @@
 theme = "gruvbox"
 
+#
+# Config
+#
+
 [editor]
 completion-timeout = 5
 cursorline = true
@@ -16,7 +20,6 @@ select = "underline"
 
 [editor.file-picker]
 hidden = false
-git-ignore = false
 
 [editor.inline-diagnostics]
 cursor-line = "warning"
