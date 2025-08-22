@@ -118,6 +118,9 @@ keybinds clear-defaults=true {
         // Others
         bind "e" { EditScrollback            ; SwitchToMode "normal"; }
         bind "s" { SwitchToMode "entersearch"; SearchInput 0        ; }
+
+        // Exit
+        bind "Ctrl s" { SwitchToMode "normal"; }
     }
     search {
         // Movement
