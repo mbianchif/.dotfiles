@@ -5,7 +5,7 @@ font-style = medium
 font-size = 17
 
 # theme
-theme = GruvboxDark
+theme = GruvboxDarkHard
 
 # window
 maximize = true
