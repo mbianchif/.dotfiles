@@ -2,5 +2,5 @@
 
 echo "🌟 Installing others..."
 curl -sS https://starship.rs/install.sh | sh
-cargo install --locked zellij
+brew install zellij
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mkasberg/ghostty-ubuntu/HEAD/install.sh)"
