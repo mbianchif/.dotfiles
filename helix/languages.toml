@@ -15,12 +15,21 @@ formatter = { command = "clang-format", args = [
 [[language]]
 name = "python"
 auto-format = true
-formatter = { command = "ruff", args = ["format", "-"] }
-language-servers = ["basedpyright"]
+language-servers = ["pylsp"]
 
-[language-server.basedpyright.config]
-basedpyright.analysis.typeCheckingMode = "standard"
+[language-server.pylsp.config.pylsp.plugins]
+ruff.enabled = true
+black.enabled = true
+isort.enabled = true
+rope_autoimport.enabled = true
 
+[language-server.pylsp.config.pylsp.plugins.black]
+args = [
+  "-",
+  "--quiet",
+  "--line-length=120",
+  "--skip-string-normalization",
+]
 
 [[language]]
 name = "javascript"
